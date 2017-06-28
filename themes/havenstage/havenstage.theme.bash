@@ -71,16 +71,16 @@ function prompt_command() {
 
   ps_username="$(set_user_color)\u${normal}"
   ps_uh_separator="${dark_grey}@${normal}"
-  ps_hostname="$(set_host_color)\h${normal}"
+  ps_hostname="$(set_host_color)\H${normal}"
 
   ps_path="${yellow}\w${normal}"
   ps_scm_prompt="${light_grey}$(scm_prompt)"
 
   ps_user_mark="${normal} ${normal}"
-  ps_user_input="${normal}\n"
+  ps_user_input="${normal}"
 
   # Set prompt
-  PS1="$ps_reboot$(__ps_time)$ps_username$ps_uh_separator$ps_hostname $ps_path $ps_scm_prompt$ps_user_mark$ps_user_input"
+  PS1="$ps_reboot$(__ps_time)$ps_username$ps_uh_separator$ps_hostname $ps_path $ps_scm_prompt$ps_user_mark$ps_user_input\n"
 }
 
 # Initialize custom colors
