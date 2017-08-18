@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "$BASH_IT/themes/havendoubletime/doubletime.theme.bash"
+source "$BASH_IT/themes/havendemo/havendemo.theme.bash"
 
 function prompt_setter() {
   # Save history
