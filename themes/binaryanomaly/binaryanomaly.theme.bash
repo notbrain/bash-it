@@ -77,7 +77,7 @@ function prompt_command() {
   ps_scm_prompt="${light_grey}$(scm_prompt)"
 
   ps_user_mark="${normal} ${normal}"
-  ps_user_input="${normal}"
+  ps_user_input="\n${normal}"
 
   # Set prompt
   PS1="$ps_reboot$(__ps_time)$ps_username$ps_uh_separator$ps_hostname $ps_path $ps_scm_prompt$ps_user_mark$ps_user_input"
