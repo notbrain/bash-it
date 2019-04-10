@@ -71,7 +71,10 @@ function prompt_command() {
 
   ps_username="$(set_user_color)\u${normal}"
   ps_uh_separator="${dark_grey}@${normal}"
-  ps_hostname="$(set_host_color)\h${normal}"
+  # normal: ps_hostname="$(set_host_color)\h${normal}"
+  # macos only
+  #
+  ps_hostname="$(set_host_color)$(scutil --get ComputerName)${normal}"
 
   ps_path="${yellow}\w${normal}"
   ps_scm_prompt="${light_grey}$(scm_prompt)"
